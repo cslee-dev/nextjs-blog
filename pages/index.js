@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,7 +11,10 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          Read{' '}
+          <Link href="/posts/first-post">
+            <a>this page!</a>
+          </Link>
         </h1>
 
         <p className="description">
@@ -135,7 +139,7 @@ export default function Home() {
           padding: 0.75rem;
           font-size: 1.1rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -196,8 +200,8 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+          sans-serif;
         }
 
         * {
